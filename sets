@@ -1,0 +1,25 @@
+setA={0,1,2,3,4,5,6}
+print(setA)
+setB=set("HELLO")
+print(setB)
+setC={3,4,5,6,7,8,9}
+print(setA.union(setC))
+print(setA.intersection(setC))
+setA.update(setC)
+print(setA)
+setA={0,1,2,3,4,5,6}
+setD={6,7,8,9}
+print(setA-setD)
+print(setC-setD)
+setE={1,2,3}
+setF={1,1,2,2,3,3}
+print(setE==setF)
+print(setA.symmetric_difference(setC))
+print(setE.issubset(setA))
+setA.add("WOAH")
+print(setA)
+try:
+    setA.remove("item")
+except:
+    print("Error: no item with the specified key exists")
+setA.discard("item")
