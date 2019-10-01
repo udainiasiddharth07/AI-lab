@@ -1,0 +1,32 @@
+dict1={1:"Mercury",2:"Venus",3:"Earth",4:"Mars"}
+print(dict1)
+print(dict1.keys())
+print(dict1.values())
+print(dict1.items())
+dict1[5]="Jupiter"
+print(dict1)
+dict1.get(6)
+dict1.pop(5)
+print(dict1)
+dict2={"Weekdays":{
+        1:"Mon",
+        2:"Tue",
+        3:"Wed"
+        },"Months":{
+                1:"Jan",
+                2:"Feb",
+                3:"March"   
+                },"Planets":{
+                        1:"Mercury",
+                        2:"Venus",
+                        3:"Earth"
+                        }}
+print(dict2["Weekdays"][1],dict2["Months"][1],dict2["Planets"][1])
+dict2.clear()
+print(dict2)
+del dict2
+try:
+    print(dict2)
+except:
+    print("NameError: name 'dict2' is not defined")
+print("hello")
